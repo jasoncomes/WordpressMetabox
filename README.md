@@ -37,7 +37,7 @@ Used to build simple custom metabox.
 
 ## Initialize
 ```
-use WordPressMeta\Metabox;
+use WordpressMetabox\Metabox;
 
 $metabox = new Metabox();
 $metabox->settings = [

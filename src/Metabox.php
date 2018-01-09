@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPressMetabox;
+namespace WordpressMetabox;
 
 /**
  * Metabox Class

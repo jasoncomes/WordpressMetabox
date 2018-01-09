@@ -20,7 +20,7 @@
     "homepage": "https://github.com/jasoncomes/WordpressMetabox",
     "autoload": {
         "psr-4": {
-            "WordPressMetabox\\": "src/"
+            "WordpressMetabox\\": "src/"
         }
     }
 }
