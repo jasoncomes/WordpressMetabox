@@ -4,7 +4,7 @@
     "keywords": [ 
         "WordPress", 
         "Custom Metabox",
-        "Meta Information",
+        "Meta Information"
     ],
      "authors": [
         {
@@ -20,7 +20,7 @@
     "homepage": "https://github.com/jasoncomes/WordpressMetabox",
     "autoload": {
         "psr-4": {
-            "WordpressMetabox\\": "src/"
+            "WordpressMeta\\": "src/"
         }
     }
 }
