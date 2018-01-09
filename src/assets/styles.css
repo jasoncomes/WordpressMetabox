@@ -1,0 +1,300 @@
+<style>
+
+[id^="custom-metabox"] {
+  font-size: 13px;
+}
+
+#poststuff [id^="custom-metabox"] .inside {
+  margin-top: 13px;
+}
+
+[id^="custom-metabox"] .snippet,
+[id^="custom-metabox"] .input-group {
+  margin-top: 13px;
+}
+
+[id^="custom-metabox"] .input-group {
+  font-size: 14px;
+}
+
+[id^="custom-metabox"] .input-group[data-dependency-key],
+.data-dependency-key {
+  display: none;
+}
+
+/* Snippet */
+[id^="custom-metabox"] .snippet hr {
+  margin: 24px 0 15px
+}
+
+/* Instructions */
+[id^="custom-metabox"] .instructions {
+  background: #f5f5f5;
+  border-radius: 1px;
+  display: block;
+  font-size: 11px;
+  margin: 5px 0;
+  padding: 7px;
+}
+
+/* Labels */
+[id^="custom-metabox"] label,
+[id^="custom-metabox"] .label {
+  cursor: default;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  margin-top: 13px;
+  text-transform: uppercase;
+}
+
+[id^="custom-metabox"] .type-checkbox label,
+[id^="custom-metabox"] .type-radio label {
+  cursor: pointer;
+}
+
+/* Inputs */
+[id^="custom-metabox"] input[type="text"],
+[id^="custom-metabox"] input[type="email"],
+[id^="custom-metabox"] input[type="date"],
+[id^="custom-metabox"] input[type="number"],
+[id^="custom-metabox"] input[type="tel"],
+[id^="custom-metabox"] input[type="range"],
+[id^="custom-metabox"] input[type="url"],
+[id^="custom-metabox"] textarea,
+[id^="custom-metabox"] select,
+[id^="custom-metabox"] .input-datalist {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+  display: block;
+  height: 36px;
+  line-height: 24px;
+  margin: 0;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+[id^="custom-metabox"] input[readonly],
+[id^="custom-metabox"] .input-datalist[readonly],
+[id^="custom-metabox"] textarea[readonly] {
+  background-color: #f7f7f7;
+  cursor: not-allowed;
+}
+
+[id^="custom-metabox"] select[multiple],
+[id^="custom-metabox"] textarea {
+  height: 120px;
+}
+
+[id^="custom-metabox"] textarea {
+  padding: 10px;
+}
+
+/* Input - Select Multiple */
+[id^="custom-metabox"] select[multiple] {
+  padding: 0;
+}
+
+
+[id^="custom-metabox"] .type-select select {
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22276.7%22%20height%3D%22153%22%20viewBox%3D%220%200%20276.7%20153%22%20enable-background%3D%22new%200%200%20276.7%20153%22%3E%3Cstyle%3E.arrow%7Bfill%3A%23393939%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M276.7%200H0l138.2%20153z%22%20%2F%3E%3C%2Fsvg%3E);
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: auto 5px;
+  padding: 0 32.5px 0 10px;
+}
+
+[id^="custom-metabox"] .type-select select::-ms-expand {
+  display: none;
+}
+
+[id^="custom-metabox"] select[multiple] option {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ffffff;
+  padding: 5px 10px;
+}
+
+/* Input - Radio/Checkbox */
+[id^="custom-metabox"] .type-radio label,
+[id^="custom-metabox"] .type-checkbox label {
+  font-size: 13px;
+  font-weight: normal;
+  padding-left: 26px;
+  position: relative;
+  text-transform: none;
+}
+
+[id^="custom-metabox"] .type-radio label input,
+[id^="custom-metabox"] .type-checkbox label input {
+  left: 0;
+  position: absolute;
+  top: 6px;
+}
+
+[id^="custom-metabox"] .type-radio label {
+  margin-top: 5px;
+}
+
+/* Input - Select2 */
+[id^="custom-metabox"] .select2-container--default .select2-selection--multiple,
+[id^="custom-metabox"] .select2-container--default .select2-selection--single {
+  border: 1px solid #ddd;
+  border-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+  background-color: #fff;
+  color: #32373c;
+  min-height: 36px;
+  outline: 0;
+  transition: 50ms border-color ease-in-out;
+}
+
+[id^="custom-metabox"] .select2-container--default.select2-container--focus .select2-selection--multiple,
+[id^="custom-metabox"] .select2-container--default.select2-container--focus .select2-selection--single {
+  border-color: #5b9dd9;
+  box-shadow: 0 0 2px rgba(30,140,190, .8);
+}
+[id^="custom-metabox"] .select2-container--default .select2-selection--multiple .select2-selection__choice {
+ background-color: #f5f5f5;
+ border-color: #e4e4e4;
+ padding: 5px 10px;
+}
+
+[id^="custom-metabox"] .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+  margin-top: 12px !important;
+  margin-bottom: 6px;
+}
+
+[id^="custom-metabox"] .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  margin-right: 5px;
+}
+
+[id^="custom-metabox"] .select2-dropdown {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+[id^="custom-metabox"] .select2-results__option {
+  border-bottom: 1px solid #ffffff;
+}
+
+[id^="custom-metabox"] .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 36px;
+  padding-left: 10px;
+  padding-right: 32px;
+}
+
+[id^="custom-metabox"] .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 34px;
+  right: 7px;
+}
+
+[id^="custom-metabox"] .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #393939 transparent transparent transparent;
+}
+
+[id^="custom-metabox"] .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent #393939 transparent;
+}
+
+/* Buttons */
+[id^="custom-metabox"] .button-controls {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+/* Notifications */
+[id^="custom-metabox"] [class*="notification"] {
+  background: #f5f5f5;
+  border-radius: 1px;
+  display: block;
+  font-size: 11px;
+  margin: 5px 0;
+  padding: 7px;
+}
+
+[id^="custom-metabox"] [class*="notification-error"] {
+  color: #bf2d2d;
+  margin: 15px 0 5px;
+}
+
+/* Subfields */
+[data-subfields-parent] {
+  background-color: #f4f4f4;
+  border: 1px solid #d4d4d4;
+  border-top: 0;
+  padding: 1px 15px 15px;
+  position: relative;
+}
+
+[data-subfields-parent]:first-child {
+  border: 1px solid #d4d4d4;
+}
+
+/* Repeater Subfields */
+[data-repeater="true"] {
+  counter-reset: section;
+}
+
+[data-repeater="true"] [data-subfields-parent] {
+  padding-left: 45px;
+}
+
+[data-repeater="true"] [data-subfields-parent]::before {
+  background: #e2e2e2;
+  border-right: 1px solid #d4d4d4;
+  counter-increment: section;
+  content: counter(section);
+  cursor: move;
+  color: #797979;
+  bottom: 0;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  line-height: 45px;
+  position: absolute;
+  text-align: center;
+  text-shadow: white 0 1px 0;
+  top: 0;
+  vertical-align: middle;
+  width: 32px;
+}
+
+[data-repeater="true"] [data-subfields-parent] .button-remove {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  color: #72777c;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 12px;
+  height: 25px;
+  right: -12px;
+  line-height: 1;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translateY(-50%);
+  transition: opacity .2s;
+  width: 25px;
+}
+
+[data-repeater="true"] [data-subfields-parent]:hover .button-remove {
+  opacity: 1;
+}
+
+[data-repeater="true"] [data-subfields-parent] .button-remove:hover {
+  background-color: #dddddd;
+  color: white;
+}
+
+</style>

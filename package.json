@@ -1,0 +1,8 @@
+{
+  "name": "WordPressMetabox",
+  "version": "1.0.0",
+  "description": "WordPress Metabox Utility",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {}
+}

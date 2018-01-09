@@ -1,0 +1,26 @@
+{
+    "name": "wordpressmetabox",
+    "description": "Metabox for Wordpress",
+    "keywords": [ 
+        "WordPress", 
+        "Custom Metabox",
+        "Meta Information",
+    ],
+     "authors": [
+        {
+            "name": "Jason Comes",
+            "email": "jasonwcomes@gmail.com",
+            "homepage": "https://github.com/jasoncomes/WordpressMetabox",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "jasonwcomes@gmail.com"
+    },
+    "homepage": "https://github.com/jasoncomes/WordpressMetabox",
+    "autoload": {
+        "psr-4": {
+            "WordPressMetabox\\": "src/"
+        }
+    }
+}
