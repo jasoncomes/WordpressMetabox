@@ -312,7 +312,7 @@ class Metabox
     {
         add_action('admin_head', function ()
         {
-            echo file_get_contents(dirname(__FILE__). '/assets/metabox-styles.css');
+            echo file_get_contents(dirname(__FILE__). '/assets/styles.css');
         });
     }
 
@@ -325,7 +325,7 @@ class Metabox
     {
         add_action('admin_footer', function ()
         {
-            echo '<script>' . file_get_contents(dirname(__FILE__) . '/assets/metabox-scripts.js') . '</script>';
+            echo '<script>' . file_get_contents(dirname(__FILE__) . '/assets/scripts.js') . '</script>';
         },
             20
         );
