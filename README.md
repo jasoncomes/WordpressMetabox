@@ -1,7 +1,7 @@
 # Composer Setup
 ```
 "require": {
-    "wordpressmeta": "dev-master"
+    "wordpressmetabox": "dev-master"
 },
 "repositories": [
     {
