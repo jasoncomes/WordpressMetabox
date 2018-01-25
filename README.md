@@ -31,6 +31,8 @@ Setup Autoloader in `functions.php`:
 require_once ABSPATH . '../../vendor/autoload.php';
 ```
 
+Depending on where your web files are loaded up publically and your vendor folder location. You may need to play around with this require path.
+
 
 # Metabox
 Used to build simple custom metabox.
